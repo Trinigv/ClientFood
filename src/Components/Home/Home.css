@@ -1,0 +1,68 @@
+.navbar{
+    border-bottom: solid 1px;
+    color: rgba(0, 140, 255, 0.5)
+}
+
+.filters{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    padding-top: 1%;
+    color: grey;
+    cursor:pointer;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3%;
+    border: none;
+}
+
+.morebut{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1%;
+    border: none;
+}
+
+.refresh{
+    width: 140px;
+    height: 30px;
+    border: none;
+    box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 0.5)
+}
+
+.refresh:hover{
+    box-shadow: 0px 5px 1px 0px rgba(0, 140, 255, 0.5)
+}
+
+.create{
+    width: 140px;
+    height: 30px;
+    border: none;
+    box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 0.5)
+}
+
+.create:hover{
+    box-shadow: 0px 5px 1px 0px rgba(0, 140, 255, 0.5)
+}
+
+
+.b{
+    width: 140px;
+    height: 30px;
+    border: none;
+    box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 0.5)
+    
+}
+
+.b:hover{
+    box-shadow: 0px 5px 1px 0px rgba(0, 140, 255, 0.5);
+    cursor:pointer;
+}
+
+.cards{
+    padding-left: 20%;
+    padding-right: 20%;
+}

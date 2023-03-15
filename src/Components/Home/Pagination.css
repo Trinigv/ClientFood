@@ -1,0 +1,14 @@
+.numberpages{
+    background-color: rgba(0, 140, 255, 0.5);
+    border: none;
+    
+}
+
+ul{
+    list-style-type:none;
+    display: flex;
+    justify-content:center;
+    list-style-type:none;
+    padding: 2%
+    
+}

@@ -1,0 +1,52 @@
+.titleRecipe{
+    font-family: 'Asap', sans-serif;
+    font-size: 12px;
+    color: rgb(40, 40, 40)
+}
+
+.titleRecipe:hover{
+    color: rgba(0, 140, 255, 0.5);
+    cursor:pointer;
+}
+
+.imageRecipe{
+    max-width: 100%;
+}
+
+.detailbutton{
+    border:none;
+    border-radius: 10px;
+    font-family: 'Asap', sans-serif;
+    background-color: whitesmoke;
+    width: 90px;
+    height: 30px;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+.recipesCard{
+    border-style: solid;
+    border-color: lightgrey;
+}
+
+.ext{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.dietsRecipe{
+    color: rgb(40, 40, 40);
+    font-family: 'Asap', sans-serif;
+    font-size: 100%;
+}
+
+.reset{
+    width: 50px;
+}
+
+#recipeimg{
+    padding-bottom: 2%;
+}
+

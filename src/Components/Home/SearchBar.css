@@ -1,0 +1,36 @@
+.inputsearch{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    margin-right: 10px;
+    background-color: rgb(203, 203, 203);
+
+}
+
+.buttonsearch{
+    width: 100px;
+    height: 30px;
+    border:none;
+    margin-right: 10px;
+}
+
+
+.buttonsearch{
+    cursor:pointer;
+}
+
+
+
+.res{
+    width: 50px;
+    height: 30px;
+    border:none;
+    margin-right: 10px;
+}
+
+
+.search{
+    padding-top: 4%;
+    padding-right: 4%;
+}
