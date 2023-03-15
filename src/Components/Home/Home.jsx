@@ -17,7 +17,6 @@ let prevId = 1;
 export default function Cards() {
 	const dispatch = useDispatch();
 	const recipesState = useSelector((state) => state.totalRecipes);
-	console.log(recipesState);
 
 	const [page, setPage] = useState(1);
 	const [recipesPage, setRecipesPage] = useState(9);
