@@ -31,7 +31,7 @@ export const getBackendDiets = () => {
 export const getRecipesByName = (title) => {
 	return async (dispatch) => {
 		let response = await axios.get(
-			`https://foodapi-l1xc.onrender.com?title=${title}`
+			`https://foodapi-l1xc.onrender.com/recipes?title=${title}`
 		);
 		return dispatch({
 			type: GET_RECIPE_NAME,
