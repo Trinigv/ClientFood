@@ -1,8 +1,21 @@
-.f{
-    padding-top: 2%;
-    display: flex;
-    justify-content: center;
+
+#backgroundcreation{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    height: 100%;
+    position: absolute;
 }
+
+#createrecipe{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 20px; 
+    width: 50%; 
+    margin-left: 200px;
+    margin-top: 40px;
+    font-style: 'Poppins, sans-serif';
+}
+
 
 #create{
     background-color: rgb(232, 232, 232);
@@ -13,34 +26,31 @@
 }
 
 .buttonhome{
-    margin-left: 80%;
-    border: none;
+    width: 100px;
     height: 40px;
-    width: 50;
-    font-style: 'Asap', sans-serif;
-    background-color: rgba(0, 140, 255, 0.5);
+    border: none;
+    background-color: rgb(100, 175, 255);
+    line-height: 1;
+    font-size: large;
+    font-weight: 550;
+    letter-spacing: '3px';
+    text-decoration: white;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: inset;
 }
 
-.title{
-    margin-bottom: 10%;
+.buttonhome:hover{
+    cursor: pointer;
 }
 
-.summary{
-    margin-bottom: 10%;
-}
 
-.healthScore{
-    margin-bottom: 10%;
-}
-
-.intscreate{
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
-
-.imagecreate{
-    margin-top: 10%;
-    margin-bottom: 10%;
+.formcreate{
+    display: flex;
+    justify-content: end;
+    padding-top: 10%;
+    width: 90%;
+    padding-left: 65%;
 }
 
 
@@ -52,19 +62,12 @@
     height: 40px;
 }
 
-#createrecipe{
-    font-style: 'Asap', sans-serif;
-    font-size: 200%;
-    background-color: rgba(0, 140, 255, 0.5);
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-
 
 #lab{
     font-size: 150%;
-    font-family: 'Asap', sans-serif
+    font-family: 'Poppins, sans-serif';
+    color: white;
+    padding: 90%;
 }
 
 .buttoncreate{
@@ -72,4 +75,5 @@
    width: 90%;
    border: none;
    height: 40px;
+   border-radius: 10px;
 }

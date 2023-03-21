@@ -1,17 +1,9 @@
-.titleRecipe{
-    font-size: 200%;
-    font-family: 'Asap', sans-serif;
-}
 
 .instructionsRecipe{
     font-size: medium;
-    font-family: 'Asap', sans-serif;
     color:black;
     text-align: justify;
     text-justify: inter-word;
-    font-size: 120%;
-    letter-spacing: 1px;
-    
 }
 
 .subtitle{
@@ -28,17 +20,15 @@
 }
 
 .summaryRecipe{
-    font-size: 120%;
+    font-size: 110%;
     font-family: 'Asap', sans-serif;
     letter-spacing: 1px;
 }
 
-.imageDetail{
-    border-radius: none;
-    width: 90%;
-    height: 90%;
-    padding-right: 2%;
+.alldetail{
+    background-color: rgb(209, 242, 249);
 }
+
 
 
 .box{
@@ -63,21 +53,25 @@
 .contdiv{
     display: flex;
     align-items: center;
-    border: solid;
-    border-color: rgba(0, 140, 255, 0.5);
-    border-width: 3px;
-    padding: 10px;
     text-align: justify;
     text-justify: inter-word;
 }
 
+
+#imgdetail{
+    width: 450px;
+    height: 300px;
+    float: left; /* or "right" */
+    margin-right: 10px; /* add some spacing between the image and the text */
+    padding-right: 10px;
+}
+
+
 .contdivhealth{
     display: flex;
     justify-content: space-evenly;
-    border: solid;
-    border-color: rgba(0, 0, 0, 0.5);
-    border-width: 3px;
     margin-top: 5%;
+    padding-bottom: 5%;
     text-align: justify;
     text-justify: inter-word;
 }

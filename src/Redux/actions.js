@@ -8,10 +8,13 @@ export const SORT_HEALTHSCORE = 'SORT_HEALTHSCORE';
 export const ALPHABET = 'ALPHABET';
 export const GET_RECIPE_NAME = 'GET_RECIPE_NAME';
 require('dotenv').config();
+{
+	/*https://foodapi-l1xc.onrender.com*/
+}
 
 export const getBackendRecipes = () => {
 	return async function ask(dispatch) {
-		let info = await axios.get(`https://foodapi-l1xc.onrender.com/recipes`);
+		let info = await axios.get(`http://localhost:3001/recipes`);
 		return dispatch({
 			type: GET_RECIPES,
 			payload: info.data,
@@ -20,7 +23,7 @@ export const getBackendRecipes = () => {
 };
 export const getBackendDiets = () => {
 	return async (dispatch) => {
-		let diets = await axios.get(`https://foodapi-l1xc.onrender.com/diets`);
+		let diets = await axios.get(`http://localhost:3001/diets`);
 		return dispatch({
 			type: GET_DIETS,
 			payload: diets.data,
@@ -31,7 +34,7 @@ export const getBackendDiets = () => {
 export const getRecipesByName = (title) => {
 	return async (dispatch) => {
 		let response = await axios.get(
-			`https://foodapi-l1xc.onrender.com/recipes?title=${title}`
+			`http://localhost:3001/recipes?title=${title}`
 		);
 		return dispatch({
 			type: GET_RECIPE_NAME,
@@ -43,7 +46,7 @@ export const getRecipesByName = (title) => {
 export const postRecipe = (payload) => {
 	return async (dispatch) => {
 		const res = await axios.post(
-			`https://foodapi-l1xc.onrender.com/recipes/create`,
+			`http://localhost:3001/recipes/create`,
 			payload
 		);
 		return {
@@ -55,7 +58,7 @@ export const postRecipe = (payload) => {
 export const getRecipeDetail = (payload) => {
 	return async function (dispatch) {
 		const details = await axios.get(
-			`https://foodapi-l1xc.onrender.com/recipes/${payload}`
+			`http://localhost:3001/recipes/${payload}`
 		);
 		return dispatch({
 			type: RECIPE_DETAIL,

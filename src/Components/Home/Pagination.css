@@ -1,7 +1,15 @@
 .numberpages{
     background-color: rgba(0, 140, 255, 0.5);
     border: none;
-    
+    color:rgb(244, 244, 244);
+    font-weight: 900;
+    font-family: 'Open Sans', sans-serif; 
+    -webkit-text-stroke: black 0.1px;
+}
+
+.numberpages:hover{
+    cursor: pointer;
+    background-color: lightcoral;
 }
 
 ul{
@@ -9,6 +17,6 @@ ul{
     display: flex;
     justify-content:center;
     list-style-type:none;
-    padding: 2%
-    
 }
+
+

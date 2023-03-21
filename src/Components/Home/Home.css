@@ -1,30 +1,20 @@
+.all{
+    background: rgb(225, 238, 247);
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
 .navbar{
-    border-bottom: solid 1px;
     color: rgba(0, 140, 255, 0.5)
 }
 
-.filters{
+.navcomponents{
     display: flex;
-    justify-content: flex-end;
-    margin-right: 20px;
-    padding-top: 1%;
-    color: grey;
+    justify-content: flex-start;
+    color: white;
     cursor:pointer;
 }
 
-.buttons{
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 3%;
-    border: none;
-}
-
-.morebut{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 1%;
-    border: none;
-}
 
 .refresh{
     width: 140px;
@@ -63,6 +53,49 @@
 }
 
 .cards{
-    padding-left: 20%;
-    padding-right: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin-top: 10px;
+
 }
+
+.card:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+.createbuttongo{
+  background-color: rgba(0, 140, 255, 0.5);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 80px;
+  font-weight: 900;
+}
+
+.createbuttongo:hover{
+  cursor: pointer;
+}
+
+.filter-title{
+  display: flex;
+  margin-bottom: 20px;
+  font-family: 'Poppins, sans-serif';
+  font-size: xx-large;
+}
+
+
+.filter-back{
+    position: absolute;
+    padding-left: 20px;
+    height: 100%;
+}
+
+
+.pagination-container {
+    position: absolute;
+    margin-top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+  }

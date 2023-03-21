@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { filterByDiet, getBackendDiets } from '../../Redux/actions';
 import './DietFilter.css';
+import { Button } from '@mui/material';
 
 export default function DietFilter({ setPage }) {
 	const dispatch = useDispatch();
@@ -29,17 +30,39 @@ export default function DietFilter({ setPage }) {
 
 	return (
 		<div className='dietfilter'>
-			<select id='filtdiets' onChange={(e) => handleSelect(e)}>
-				{' '}
+			<select
+				id='filtdiets'
+				onChange={(e) => handleSelect(e)}
+				style={{
+					width: 200,
+					height: 33,
+					backgroundColor: '#E7F2F8',
+					color: '#555555',
+					borderRadius: '8px',
+				}}>
 				<option value='none' selected disabled hidden>
 					Select an Option
 				</option>{' '}
 				{diets.length &&
 					diets.map((d) => <option key={d.id}>{d.name}</option>)}{' '}
 			</select>
-			<button className='selectDiet' onClick={(e) => handleSubmit(e)}>
+			<Button
+				variant='contained'
+				type='submit'
+				sx={{
+					width: 20,
+					height: 27,
+					marginLeft: '10px',
+					marginRight: '20px',
+					fontSize: 12,
+					fontFamily: 'Poppins, sans-serif',
+					color: 'white',
+					fontWeight: 900,
+					backgroundColor: 'rgba(0, 140, 255, 0.5)',
+				}}
+				onClick={(e) => handleSubmit(e)}>
 				Search
-			</button>
+			</Button>
 		</div>
 	);
 }
