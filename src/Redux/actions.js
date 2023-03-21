@@ -8,9 +8,6 @@ export const SORT_HEALTHSCORE = 'SORT_HEALTHSCORE';
 export const ALPHABET = 'ALPHABET';
 export const GET_RECIPE_NAME = 'GET_RECIPE_NAME';
 require('dotenv').config();
-{
-	/*https://foodapi-l1xc.onrender.com*/
-}
 
 export const getBackendRecipes = () => {
 	return async function ask(dispatch) {
